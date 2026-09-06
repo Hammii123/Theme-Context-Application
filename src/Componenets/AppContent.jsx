@@ -8,9 +8,9 @@ function AppContent() {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
-  function closeMenu() {
-    setMenuOpen(false);
-  }
+    function closeMenu() {
+        setMenuOpen(false);
+    }
     return (
         <div className={`app ${theme}`}>
 
@@ -20,59 +20,59 @@ function AppContent() {
 
 
 
-                
-        {/* Navbar */}
-        <nav className="nav-wrapper">
 
-          <span className="brand" >
-            ChatGPT
-          </span>
+                {/* Navbar */}
+                <nav className="nav-wrapper">
 
-          {/* Hamburger */}
-          <button
-            className="hamburger"
-            type="button"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            ☰
-          </button>
+                    <span className="brand" >
+                        ChatGPT
+                    </span>
 
-          {/* Navigation Links */}
-          <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+                    {/* Hamburger */}
+                    <button
+                        className="hamburger"
+                        type="button"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >
+                        ☰
+                    </button>
 
-            <li>
-              <a href="#introduction" onClick={closeMenu}>
-                Introduction
-              </a>
-            </li>
+                    {/* Navigation Links */}
+                    <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-            <li>
-              <a href="#services" onClick={closeMenu}>
-                Services
-              </a>
-            </li>
+                        <li>
+                            <a href="#introduction" onClick={closeMenu}>
+                                Introduction
+                            </a>
+                        </li>
 
-            <li>
-              <a href="#features" onClick={closeMenu}>
-                Features
-              </a>
-            </li>
+                        <li>
+                            <a href="#services" onClick={closeMenu}>
+                                Services
+                            </a>
+                        </li>
 
-            <li>
-              <a href="#reviews" onClick={closeMenu}>
-                Reviews
-              </a>
-            </li>
+                        <li>
+                            <a href="#features" onClick={closeMenu}>
+                                Features
+                            </a>
+                        </li>
 
-            <li>
-              <a href="#pricing" onClick={closeMenu}>
-                Pricing
-              </a>
-            </li>
+                        <li>
+                            <a href="#reviews" onClick={closeMenu}>
+                                Reviews
+                            </a>
+                        </li>
 
-          </ul>
+                        <li>
+                            <a href="#pricing" onClick={closeMenu}>
+                                Pricing
+                            </a>
+                        </li>
 
-        </nav>
+                    </ul>
+
+                </nav>
 
                 {/* Theme slider */}
                 <ThemeToggle />

@@ -1,7 +1,7 @@
 
 import { ThemeProvider } from './Context/ThemeProvider'
-import './App.css'
 import AppContent from './Componenets/AppContent'
+import './App.css'
 function App() {
  
 
